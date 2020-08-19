@@ -1,0 +1,189 @@
+$comment
+	File created using the following command:
+		vcd file ffjk.msim.vcd -direction
+$end
+$date
+	Mon Oct 28 12:49:49 2019
+$end
+$version
+	ModelSim Version 10.5b
+$end
+$timescale
+	1ps
+$end
+
+$scope module ffjk_vhd_vec_tst $end
+$var wire 1 ! clk $end
+$var wire 1 " j $end
+$var wire 1 # k $end
+$var wire 1 $ q $end
+$var wire 1 % q_bar $end
+
+$scope module i1 $end
+$var wire 1 & gnd $end
+$var wire 1 ' vcc $end
+$var wire 1 ( unknown $end
+$var wire 1 ) devoe $end
+$var wire 1 * devclrn $end
+$var wire 1 + devpor $end
+$var wire 1 , ww_devoe $end
+$var wire 1 - ww_devclrn $end
+$var wire 1 . ww_devpor $end
+$var wire 1 / ww_j $end
+$var wire 1 0 ww_k $end
+$var wire 1 1 ww_clk $end
+$var wire 1 2 ww_q $end
+$var wire 1 3 ww_q_bar $end
+$var wire 1 4 \q~output_o\ $end
+$var wire 1 5 \q_bar~output_o\ $end
+$var wire 1 6 \clk~input_o\ $end
+$var wire 1 7 \k~input_o\ $end
+$var wire 1 8 \a[2]~1_combout\ $end
+$var wire 1 9 \j~input_o\ $end
+$var wire 1 : \a[2]~2_combout\ $end
+$var wire 1 ; \q~1_combout\ $end
+$var wire 1 < \q_bar~0_combout\ $end
+$var wire 1 = \ALT_INV_q~1_combout\ $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0!
+0"
+0#
+x$
+x%
+0&
+1'
+x(
+1)
+1*
+1+
+1,
+1-
+1.
+0/
+00
+01
+x2
+x3
+x4
+x5
+06
+07
+x8
+09
+x:
+x;
+x<
+x=
+$end
+#20000
+1"
+1/
+19
+#50000
+1!
+11
+16
+#60000
+0"
+0/
+09
+#80000
+1#
+10
+17
+#100000
+0!
+01
+06
+#150000
+1!
+11
+16
+#180000
+0#
+00
+07
+#200000
+0!
+01
+06
+#250000
+1!
+11
+16
+#260000
+1#
+10
+17
+#300000
+0!
+01
+06
+#350000
+1!
+11
+16
+#400000
+0!
+0#
+01
+00
+07
+06
+#450000
+1!
+11
+16
+#500000
+0!
+01
+06
+#550000
+1!
+11
+16
+#600000
+0!
+01
+06
+#620000
+1#
+10
+17
+#650000
+1!
+11
+16
+#660000
+1"
+1/
+19
+#700000
+0!
+01
+06
+#750000
+1!
+11
+16
+#800000
+0!
+01
+06
+#850000
+1!
+11
+16
+#900000
+0!
+01
+06
+#950000
+1!
+11
+16
+#1000000

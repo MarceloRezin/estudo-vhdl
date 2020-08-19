@@ -1,0 +1,45 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/marcelo-note/projetos/vhdl/ffjk/simulation/modelsim
+Effjk
+Z1 w1572277372
+R0
+Z2 8/home/marcelo-note/projetos/vhdl/ffjk/ffjk.vhd
+Z3 F/home/marcelo-note/projetos/vhdl/ffjk/ffjk.vhd
+l0
+L9
+Vh2bE2n38:[<PE>=3nNh0j3
+!s100 @;ZXKWTlCll[OhMg^CU7P1
+Z4 OV;C;10.5b;63
+31
+Z5 !s110 1572277951
+!i10b 1
+Z6 !s108 1572277951.000000
+Z7 !s90 -reportprogress|300|-93|-work|work|/home/marcelo-note/projetos/vhdl/ffjk/ffjk.vhd|
+Z8 !s107 /home/marcelo-note/projetos/vhdl/ffjk/ffjk.vhd|
+!i113 1
+Z9 o-93 -work work
+Z10 tExplicit 1 CvgOpt 0
+Amain
+DEx4 work 4 ffjk 0 22 h2bE2n38:[<PE>=3nNh0j3
+l21
+L17
+VTzol1KYN0JT=Z4?9FBE[<0
+!s100 oE3:7EKdSO:DHo]mGnWVR0
+R4
+31
+R5
+!i10b 1
+R6
+R7
+R8
+!i113 1
+R9
+R10

@@ -1,0 +1,84 @@
+# Loading project hello_tb
+# Compile of hello_tb.vhd failed with 2 errors.
+# Compile of hello_tb.vhd was successful.
+vsim work.hello_tb
+# vsim work.hello_tb 
+# Start time: 15:07:12 on Nov 09,2019
+# Loading std.standard
+# Loading work.hello_tb(sim)
+run
+# ** Note: Hello World!
+#    Time: 0 ps  Iteration: 0  Instance: /hello_tb
+quit -sim
+# End time: 15:58:33 on Nov 09,2019, Elapsed time: 0:51:21
+# Errors: 0, Warnings: 0
+# Compile of clk_rst_tb.vhd failed with 2 errors.
+# Compile of clk_rst_tb.vhd was successful.
+vsim work.clk_rst_tb
+# vsim work.clk_rst_tb 
+# Start time: 15:59:52 on Nov 09,2019
+# Loading std.standard
+# Loading work.clk_rst_tb(sim)
+run 300 ns
+add wave -position insertpoint  \
+sim:/clk_rst_tb/clk \
+sim:/clk_rst_tb/rst
+restart -f
+run 300 ns
+run 500 ns
+quit -sim
+# End time: 16:18:41 on Nov 09,2019, Elapsed time: 0:18:49
+# Errors: 0, Warnings: 0
+# reading /home/marcelo-note/intelFPGA/18.1/modelsim_ase/linuxaloem/../modelsim.ini
+# Loading project bcd_checker
+# Compile of bcd_checker.vhd was successful.
+# Compile of bcd_checker_tb.vhd failed with 3 errors.
+# 2 compiles, 1 failed with 3 errors.
+# Compile of bcd_checker.vhd was successful.
+# Compile of bcd_checker_tb.vhd failed with 3 errors.
+# 2 compiles, 1 failed with 3 errors.
+# Compile of bcd_checker.vhd was successful.
+# Compile of bcd_checker_tb.vhd failed with 3 errors.
+# 2 compiles, 1 failed with 3 errors.
+# Compile of bcd_checker.vhd was successful.
+# Compile of bcd_checker_tb.vhd was successful.
+# 2 compiles, 0 failed with no errors.
+vsim work.bcd_checker_tb
+# vsim work.bcd_checker_tb 
+# Start time: 16:22:58 on Nov 09,2019
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.bcd_checker_tb(sim)
+# Loading work.bcd_checker(dataflow)
+add wave -position insertpoint  \
+sim:/bcd_checker_tb/bcd_tb \
+sim:/bcd_checker_tb/is_valid_tb
+run 2000
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /bcd_checker_tb/DUT
+quit -sim
+# End time: 16:24:54 on Nov 09,2019, Elapsed time: 0:01:56
+# Errors: 0, Warnings: 1
+# Compile of bcd_checker.vhd was successful.
+# Compile of bcd_checker_tb.vhd was successful.
+# 2 compiles, 0 failed with no errors.
+vsim work.bcd_checker_tb
+# vsim work.bcd_checker_tb 
+# Start time: 16:26:08 on Nov 09,2019
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.bcd_checker_tb(sim)
+# Loading work.bcd_checker(dataflow)
+add wave -position insertpoint  \
+sim:/bcd_checker_tb/bcd_tb \
+sim:/bcd_checker_tb/is_valid_tb
+run 2000 ns
+# ** Warning: NUMERIC_STD.">": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /bcd_checker_tb/DUT
+quit -sim
+# End time: 16:42:35 on Nov 09,2019, Elapsed time: 0:16:27
+# Errors: 0, Warnings: 1

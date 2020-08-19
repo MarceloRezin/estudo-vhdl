@@ -1,0 +1,143 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/marcelo-note/projetos/vhdl/and-gate/simulation/qsim
+Eand_gate
+Z1 w1592678893
+Z2 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
+Z3 DPx11 fiftyfivenm 21 fiftyfivenm_atom_pack 0 22 7d5Xo;QBOkc31OfQTzSXV0
+Z4 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
+Z5 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z6 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z7 DPx11 fiftyfivenm 22 fiftyfivenm_components 0 22 IfY7Mh2WPBc;@7U@3<I^[0
+R0
+Z8 8and_gate.vho
+Z9 Fand_gate.vho
+l0
+L88
+Vo5^[z14aJC4S_>T8W5><^3
+!s100 @NI0LmID4f6n7P9;iYe5@0
+Z10 OV;C;10.5b;63
+32
+Z11 !s110 1592678898
+!i10b 1
+Z12 !s108 1592678897.000000
+Z13 !s90 -work|work|and_gate.vho|
+Z14 !s107 and_gate.vho|
+!i113 1
+Z15 o-work work
+Z16 tExplicit 1 CvgOpt 0
+Astructure
+R2
+R3
+R4
+R5
+R6
+R7
+DEx4 work 8 and_gate 0 22 o5^[z14aJC4S_>T8W5><^3
+l133
+L102
+VLz30kTN`JM0]kn?6CYa]D1
+!s100 Bjl4RN=]MlCji;^Uni4Kh3
+R10
+32
+R11
+!i10b 1
+R12
+R13
+R14
+!i113 1
+R15
+R16
+Eand_gate_vhd_vec_tst
+Z17 w1592678891
+R5
+R6
+R0
+Z18 8Waveform.vwf.vht
+Z19 FWaveform.vwf.vht
+l0
+L31
+VHW32dR7ia4R[1:B1_dj;]1
+!s100 ;moSH[b9UeU7<SF]AXiH[2
+R10
+32
+R11
+!i10b 1
+Z20 !s108 1592678898.000000
+Z21 !s90 -work|work|Waveform.vwf.vht|
+Z22 !s107 Waveform.vwf.vht|
+!i113 1
+R15
+R16
+Aand_gate_arch
+R5
+R6
+DEx4 work 20 and_gate_vhd_vec_tst 0 22 HW32dR7ia4R[1:B1_dj;]1
+l46
+L33
+Vi_:ZG8C;YZinQG@C0UB[22
+!s100 AWK^dFAJ@kXej5clQP3>i2
+R10
+32
+R11
+!i10b 1
+R20
+R21
+R22
+!i113 1
+R15
+R16
+Ehard_block
+R1
+R2
+R3
+R4
+R5
+R6
+R7
+R0
+R8
+R9
+l0
+L34
+V8_BbEmGd;OHS6h@;gFc7W3
+!s100 ROH=D<N4CT6aCZ<37A[_?0
+R10
+32
+R11
+!i10b 1
+R12
+R13
+R14
+!i113 1
+R15
+R16
+Astructure
+R2
+R3
+R4
+R5
+R6
+R7
+DEx4 work 10 hard_block 0 22 8_BbEmGd;OHS6h@;gFc7W3
+l75
+L53
+Vg=W`CQ>24lhYF71zFSkY43
+!s100 zW6ML5NVY?Ai`]`n2XhME3
+R10
+32
+R11
+!i10b 1
+R12
+R13
+R14
+!i113 1
+R15
+R16

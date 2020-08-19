@@ -1,0 +1,77 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'clock'
+Slack : -6.834
+TNS   : -235.434
+
+Type  : Slow 1200mV 85C Model Hold 'clock'
+Slack : 0.348
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Recovery 'passagem_zero'
+Slack : 0.059
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Removal 'passagem_zero'
+Slack : 0.332
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clock'
+Slack : -3.000
+TNS   : -74.553
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'passagem_zero'
+Slack : -3.000
+TNS   : -4.403
+
+Type  : Slow 1200mV 0C Model Setup 'clock'
+Slack : -6.194
+TNS   : -212.442
+
+Type  : Slow 1200mV 0C Model Hold 'clock'
+Slack : 0.312
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Recovery 'passagem_zero'
+Slack : 0.148
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Removal 'passagem_zero'
+Slack : 0.333
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clock'
+Slack : -3.000
+TNS   : -74.553
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'passagem_zero'
+Slack : -3.000
+TNS   : -4.403
+
+Type  : Fast 1200mV 0C Model Setup 'clock'
+Slack : -2.188
+TNS   : -68.931
+
+Type  : Fast 1200mV 0C Model Hold 'clock'
+Slack : 0.152
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Recovery 'passagem_zero'
+Slack : 0.552
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'passagem_zero'
+Slack : 0.090
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clock'
+Slack : -3.000
+TNS   : -55.734
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'passagem_zero'
+Slack : -3.000
+TNS   : -4.000
+
+------------------------------------------------------------

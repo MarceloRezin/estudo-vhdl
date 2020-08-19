@@ -1,0 +1,36 @@
+# do cronometro_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying /home/marcelo-note/intelFPGA/18.1/modelsim_ase/linuxaloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vcom -93 -work work {/home/marcelo-note/projetos/vhdl/cronometro/cronometro.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:14:07 on Jan 26,2020
+# vcom -reportprogress 300 -93 -work work /home/marcelo-note/projetos/vhdl/cronometro/cronometro.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity cronometro
+# -- Compiling architecture main of cronometro
+# End time: 11:14:07 on Jan 26,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+vsim work.cronometro
+# vsim work.cronometro 
+# Start time: 11:14:11 on Jan 26,2020
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.cronometro(main)
+add wave -position insertpoint  \
+sim:/cronometro/out_sig
+# End time: 11:37:30 on Jan 26,2020, Elapsed time: 0:23:19
+# Errors: 0, Warnings: 0

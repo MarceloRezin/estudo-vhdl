@@ -1,0 +1,80 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+d/home/marcelo-note/intelFPGA/18.1/modelsim_ase/linuxaloem
+Eclk_rst_tb
+Z0 w1573325975
+Z1 d/home/marcelo-note/projetos/vhdl/hello-tb
+Z2 8/home/marcelo-note/projetos/vhdl/hello-tb/clk_rst_tb.vhd
+Z3 F/home/marcelo-note/projetos/vhdl/hello-tb/clk_rst_tb.vhd
+l0
+L9
+VMcM2W0Ae@K0^ZJbW1TNmg1
+!s100 YzlfHBNXPJSz1SFQ=EClk2
+Z4 OV;C;10.5b;63
+32
+Z5 !s110 1573325983
+!i10b 1
+Z6 !s108 1573325983.000000
+Z7 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/marcelo-note/projetos/vhdl/hello-tb/clk_rst_tb.vhd|
+Z8 !s107 /home/marcelo-note/projetos/vhdl/hello-tb/clk_rst_tb.vhd|
+!i113 1
+Z9 o-work work -2002 -explicit
+Z10 tExplicit 1 CvgOpt 0
+Asim
+DEx4 work 10 clk_rst_tb 0 22 McM2W0Ae@K0^ZJbW1TNmg1
+l18
+L13
+V:cZ4idc`KlTMW9`?o^[8X3
+!s100 Do3=cXzYN;L`MF@a?I;5f0
+R4
+32
+R5
+!i10b 1
+R6
+R7
+R8
+!i113 1
+R9
+R10
+Ehello_tb
+Z11 w1573322813
+R1
+Z12 8/home/marcelo-note/projetos/vhdl/hello-tb/hello_tb.vhd
+Z13 F/home/marcelo-note/projetos/vhdl/hello-tb/hello_tb.vhd
+l0
+L9
+Vo_PJeFfj83:_GVKJR_W;l1
+!s100 X9>d`:A6fB0T8=2ieb<R[3
+R4
+32
+Z14 !s110 1573322816
+!i10b 1
+Z15 !s108 1573322815.000000
+Z16 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/marcelo-note/projetos/vhdl/hello-tb/hello_tb.vhd|
+Z17 !s107 /home/marcelo-note/projetos/vhdl/hello-tb/hello_tb.vhd|
+!i113 1
+R9
+R10
+Asim
+DEx4 work 8 hello_tb 0 22 o_PJeFfj83:_GVKJR_W;l1
+l14
+L13
+V25[TS[K@jY^X<D<MVGQ@A1
+!s100 X[SU2g`5hJC<N8m:n65zJ3
+R4
+32
+R14
+!i10b 1
+R15
+R16
+R17
+!i113 1
+R9
+R10

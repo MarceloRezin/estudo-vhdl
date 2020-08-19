@@ -1,0 +1,35 @@
+-- Autor: Marcelo Rezin
+-- Data: 04/01/2020
+
+-- Libs
+library ieee;
+use ieee.std_logic_1164.all;
+
+-- Entidade
+entity sete_seg_test is
+    port(
+        add_sig	    :   in  std_logic;
+        out_sig     :   out bit
+        --out_disp    :   out std_logic_vector(5 downto 0)
+    );
+end sete_seg_test;
+
+architecture main of sete_seg_test is
+
+    signal s_temp    :   unsigned(5 downto 0);
+
+begin
+
+    contagem : process(add_sig)
+    begin
+        if add = '1' then
+            s_temp <= s_temp + 1;
+        end if;
+
+        if s_temp >= 2 then
+            out_sig = '1';
+        end if;
+
+    end process;
+    
+end main;

@@ -1,0 +1,149 @@
+|counter
+clk => reg:U2.clk
+rst => reg:U2.rst
+q[0] <= reg:U2.q[0]
+q[1] <= reg:U2.q[1]
+q[2] <= reg:U2.q[2]
+q[3] <= reg:U2.q[3]
+
+
+|counter|carry_ripple_4bit_adder:U1
+A[0] => full_adder:FA1.A
+A[1] => full_adder:FA2.A
+A[2] => full_adder:FA3.A
+A[3] => full_adder:FA4.A
+B[0] => full_adder:FA1.B
+B[1] => full_adder:FA2.B
+B[2] => full_adder:FA3.B
+B[3] => full_adder:FA4.B
+CARRY_IN => full_adder:FA1.CARRY_IN
+S[0] <= full_adder:FA1.SUM
+S[1] <= full_adder:FA2.SUM
+S[2] <= full_adder:FA3.SUM
+S[3] <= full_adder:FA4.SUM
+CARRY_OUT <= full_adder:FA4.CARRY
+
+
+|counter|carry_ripple_4bit_adder:U1|full_adder:FA1
+A => half_adder:ha1.A
+B => half_adder:ha1.B
+CARRY_IN => half_adder:ha2.B
+SUM <= half_adder:ha2.SUM
+CARRY <= CARRY.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|counter|carry_ripple_4bit_adder:U1|full_adder:FA1|half_adder:ha1
+A => SUM.IN0
+A => CARRY.IN0
+B => SUM.IN1
+B => CARRY.IN1
+SUM <= SUM.DB_MAX_OUTPUT_PORT_TYPE
+CARRY <= CARRY.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|counter|carry_ripple_4bit_adder:U1|full_adder:FA1|half_adder:ha2
+A => SUM.IN0
+A => CARRY.IN0
+B => SUM.IN1
+B => CARRY.IN1
+SUM <= SUM.DB_MAX_OUTPUT_PORT_TYPE
+CARRY <= CARRY.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|counter|carry_ripple_4bit_adder:U1|full_adder:FA2
+A => half_adder:ha1.A
+B => half_adder:ha1.B
+CARRY_IN => half_adder:ha2.B
+SUM <= half_adder:ha2.SUM
+CARRY <= CARRY.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|counter|carry_ripple_4bit_adder:U1|full_adder:FA2|half_adder:ha1
+A => SUM.IN0
+A => CARRY.IN0
+B => SUM.IN1
+B => CARRY.IN1
+SUM <= SUM.DB_MAX_OUTPUT_PORT_TYPE
+CARRY <= CARRY.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|counter|carry_ripple_4bit_adder:U1|full_adder:FA2|half_adder:ha2
+A => SUM.IN0
+A => CARRY.IN0
+B => SUM.IN1
+B => CARRY.IN1
+SUM <= SUM.DB_MAX_OUTPUT_PORT_TYPE
+CARRY <= CARRY.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|counter|carry_ripple_4bit_adder:U1|full_adder:FA3
+A => half_adder:ha1.A
+B => half_adder:ha1.B
+CARRY_IN => half_adder:ha2.B
+SUM <= half_adder:ha2.SUM
+CARRY <= CARRY.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|counter|carry_ripple_4bit_adder:U1|full_adder:FA3|half_adder:ha1
+A => SUM.IN0
+A => CARRY.IN0
+B => SUM.IN1
+B => CARRY.IN1
+SUM <= SUM.DB_MAX_OUTPUT_PORT_TYPE
+CARRY <= CARRY.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|counter|carry_ripple_4bit_adder:U1|full_adder:FA3|half_adder:ha2
+A => SUM.IN0
+A => CARRY.IN0
+B => SUM.IN1
+B => CARRY.IN1
+SUM <= SUM.DB_MAX_OUTPUT_PORT_TYPE
+CARRY <= CARRY.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|counter|carry_ripple_4bit_adder:U1|full_adder:FA4
+A => half_adder:ha1.A
+B => half_adder:ha1.B
+CARRY_IN => half_adder:ha2.B
+SUM <= half_adder:ha2.SUM
+CARRY <= CARRY.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|counter|carry_ripple_4bit_adder:U1|full_adder:FA4|half_adder:ha1
+A => SUM.IN0
+A => CARRY.IN0
+B => SUM.IN1
+B => CARRY.IN1
+SUM <= SUM.DB_MAX_OUTPUT_PORT_TYPE
+CARRY <= CARRY.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|counter|carry_ripple_4bit_adder:U1|full_adder:FA4|half_adder:ha2
+A => SUM.IN0
+A => CARRY.IN0
+B => SUM.IN1
+B => CARRY.IN1
+SUM <= SUM.DB_MAX_OUTPUT_PORT_TYPE
+CARRY <= CARRY.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|counter|reg:U2
+clk => q[0]~reg0.CLK
+clk => q[1]~reg0.CLK
+clk => q[2]~reg0.CLK
+clk => q[3]~reg0.CLK
+rst => q[0]~reg0.ACLR
+rst => q[1]~reg0.ACLR
+rst => q[2]~reg0.ACLR
+rst => q[3]~reg0.ACLR
+data[0] => q[0]~reg0.DATAIN
+data[1] => q[1]~reg0.DATAIN
+data[2] => q[2]~reg0.DATAIN
+data[3] => q[3]~reg0.DATAIN
+q[0] <= q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[1] <= q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[2] <= q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[3] <= q[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

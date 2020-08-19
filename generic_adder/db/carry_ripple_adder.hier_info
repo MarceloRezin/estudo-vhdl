@@ -1,0 +1,353 @@
+|carry_ripple_adder
+A[0] => full_adder:gen:0:FA.A
+A[1] => full_adder:gen:1:FA.A
+A[2] => full_adder:gen:2:FA.A
+A[3] => full_adder:gen:3:FA.A
+A[4] => full_adder:gen:4:FA.A
+A[5] => full_adder:gen:5:FA.A
+A[6] => full_adder:gen:6:FA.A
+A[7] => full_adder:gen:7:FA.A
+A[8] => full_adder:gen:8:FA.A
+A[9] => full_adder:gen:9:FA.A
+A[10] => full_adder:gen:10:FA.A
+A[11] => full_adder:gen:11:FA.A
+B[0] => full_adder:gen:0:FA.B
+B[1] => full_adder:gen:1:FA.B
+B[2] => full_adder:gen:2:FA.B
+B[3] => full_adder:gen:3:FA.B
+B[4] => full_adder:gen:4:FA.B
+B[5] => full_adder:gen:5:FA.B
+B[6] => full_adder:gen:6:FA.B
+B[7] => full_adder:gen:7:FA.B
+B[8] => full_adder:gen:8:FA.B
+B[9] => full_adder:gen:9:FA.B
+B[10] => full_adder:gen:10:FA.B
+B[11] => full_adder:gen:11:FA.B
+CARRY_IN => full_adder:gen:0:FA.CARRY_IN
+S[0] <= full_adder:gen:0:FA.SUM
+S[1] <= full_adder:gen:1:FA.SUM
+S[2] <= full_adder:gen:2:FA.SUM
+S[3] <= full_adder:gen:3:FA.SUM
+S[4] <= full_adder:gen:4:FA.SUM
+S[5] <= full_adder:gen:5:FA.SUM
+S[6] <= full_adder:gen:6:FA.SUM
+S[7] <= full_adder:gen:7:FA.SUM
+S[8] <= full_adder:gen:8:FA.SUM
+S[9] <= full_adder:gen:9:FA.SUM
+S[10] <= full_adder:gen:10:FA.SUM
+S[11] <= full_adder:gen:11:FA.SUM
+CARRY_OUT <= full_adder:gen:11:FA.CARRY
+
+
+|carry_ripple_adder|full_adder:\gen:0:FA
+A => half_adder:ha1.A
+B => half_adder:ha1.B
+CARRY_IN => half_adder:ha2.B
+SUM <= half_adder:ha2.SUM
+CARRY <= CARRY.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|carry_ripple_adder|full_adder:\gen:0:FA|half_adder:ha1
+A => SUM.IN0
+A => CARRY.IN0
+B => SUM.IN1
+B => CARRY.IN1
+SUM <= SUM.DB_MAX_OUTPUT_PORT_TYPE
+CARRY <= CARRY.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|carry_ripple_adder|full_adder:\gen:0:FA|half_adder:ha2
+A => SUM.IN0
+A => CARRY.IN0
+B => SUM.IN1
+B => CARRY.IN1
+SUM <= SUM.DB_MAX_OUTPUT_PORT_TYPE
+CARRY <= CARRY.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|carry_ripple_adder|full_adder:\gen:1:FA
+A => half_adder:ha1.A
+B => half_adder:ha1.B
+CARRY_IN => half_adder:ha2.B
+SUM <= half_adder:ha2.SUM
+CARRY <= CARRY.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|carry_ripple_adder|full_adder:\gen:1:FA|half_adder:ha1
+A => SUM.IN0
+A => CARRY.IN0
+B => SUM.IN1
+B => CARRY.IN1
+SUM <= SUM.DB_MAX_OUTPUT_PORT_TYPE
+CARRY <= CARRY.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|carry_ripple_adder|full_adder:\gen:1:FA|half_adder:ha2
+A => SUM.IN0
+A => CARRY.IN0
+B => SUM.IN1
+B => CARRY.IN1
+SUM <= SUM.DB_MAX_OUTPUT_PORT_TYPE
+CARRY <= CARRY.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|carry_ripple_adder|full_adder:\gen:2:FA
+A => half_adder:ha1.A
+B => half_adder:ha1.B
+CARRY_IN => half_adder:ha2.B
+SUM <= half_adder:ha2.SUM
+CARRY <= CARRY.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|carry_ripple_adder|full_adder:\gen:2:FA|half_adder:ha1
+A => SUM.IN0
+A => CARRY.IN0
+B => SUM.IN1
+B => CARRY.IN1
+SUM <= SUM.DB_MAX_OUTPUT_PORT_TYPE
+CARRY <= CARRY.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|carry_ripple_adder|full_adder:\gen:2:FA|half_adder:ha2
+A => SUM.IN0
+A => CARRY.IN0
+B => SUM.IN1
+B => CARRY.IN1
+SUM <= SUM.DB_MAX_OUTPUT_PORT_TYPE
+CARRY <= CARRY.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|carry_ripple_adder|full_adder:\gen:3:FA
+A => half_adder:ha1.A
+B => half_adder:ha1.B
+CARRY_IN => half_adder:ha2.B
+SUM <= half_adder:ha2.SUM
+CARRY <= CARRY.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|carry_ripple_adder|full_adder:\gen:3:FA|half_adder:ha1
+A => SUM.IN0
+A => CARRY.IN0
+B => SUM.IN1
+B => CARRY.IN1
+SUM <= SUM.DB_MAX_OUTPUT_PORT_TYPE
+CARRY <= CARRY.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|carry_ripple_adder|full_adder:\gen:3:FA|half_adder:ha2
+A => SUM.IN0
+A => CARRY.IN0
+B => SUM.IN1
+B => CARRY.IN1
+SUM <= SUM.DB_MAX_OUTPUT_PORT_TYPE
+CARRY <= CARRY.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|carry_ripple_adder|full_adder:\gen:4:FA
+A => half_adder:ha1.A
+B => half_adder:ha1.B
+CARRY_IN => half_adder:ha2.B
+SUM <= half_adder:ha2.SUM
+CARRY <= CARRY.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|carry_ripple_adder|full_adder:\gen:4:FA|half_adder:ha1
+A => SUM.IN0
+A => CARRY.IN0
+B => SUM.IN1
+B => CARRY.IN1
+SUM <= SUM.DB_MAX_OUTPUT_PORT_TYPE
+CARRY <= CARRY.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|carry_ripple_adder|full_adder:\gen:4:FA|half_adder:ha2
+A => SUM.IN0
+A => CARRY.IN0
+B => SUM.IN1
+B => CARRY.IN1
+SUM <= SUM.DB_MAX_OUTPUT_PORT_TYPE
+CARRY <= CARRY.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|carry_ripple_adder|full_adder:\gen:5:FA
+A => half_adder:ha1.A
+B => half_adder:ha1.B
+CARRY_IN => half_adder:ha2.B
+SUM <= half_adder:ha2.SUM
+CARRY <= CARRY.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|carry_ripple_adder|full_adder:\gen:5:FA|half_adder:ha1
+A => SUM.IN0
+A => CARRY.IN0
+B => SUM.IN1
+B => CARRY.IN1
+SUM <= SUM.DB_MAX_OUTPUT_PORT_TYPE
+CARRY <= CARRY.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|carry_ripple_adder|full_adder:\gen:5:FA|half_adder:ha2
+A => SUM.IN0
+A => CARRY.IN0
+B => SUM.IN1
+B => CARRY.IN1
+SUM <= SUM.DB_MAX_OUTPUT_PORT_TYPE
+CARRY <= CARRY.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|carry_ripple_adder|full_adder:\gen:6:FA
+A => half_adder:ha1.A
+B => half_adder:ha1.B
+CARRY_IN => half_adder:ha2.B
+SUM <= half_adder:ha2.SUM
+CARRY <= CARRY.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|carry_ripple_adder|full_adder:\gen:6:FA|half_adder:ha1
+A => SUM.IN0
+A => CARRY.IN0
+B => SUM.IN1
+B => CARRY.IN1
+SUM <= SUM.DB_MAX_OUTPUT_PORT_TYPE
+CARRY <= CARRY.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|carry_ripple_adder|full_adder:\gen:6:FA|half_adder:ha2
+A => SUM.IN0
+A => CARRY.IN0
+B => SUM.IN1
+B => CARRY.IN1
+SUM <= SUM.DB_MAX_OUTPUT_PORT_TYPE
+CARRY <= CARRY.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|carry_ripple_adder|full_adder:\gen:7:FA
+A => half_adder:ha1.A
+B => half_adder:ha1.B
+CARRY_IN => half_adder:ha2.B
+SUM <= half_adder:ha2.SUM
+CARRY <= CARRY.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|carry_ripple_adder|full_adder:\gen:7:FA|half_adder:ha1
+A => SUM.IN0
+A => CARRY.IN0
+B => SUM.IN1
+B => CARRY.IN1
+SUM <= SUM.DB_MAX_OUTPUT_PORT_TYPE
+CARRY <= CARRY.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|carry_ripple_adder|full_adder:\gen:7:FA|half_adder:ha2
+A => SUM.IN0
+A => CARRY.IN0
+B => SUM.IN1
+B => CARRY.IN1
+SUM <= SUM.DB_MAX_OUTPUT_PORT_TYPE
+CARRY <= CARRY.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|carry_ripple_adder|full_adder:\gen:8:FA
+A => half_adder:ha1.A
+B => half_adder:ha1.B
+CARRY_IN => half_adder:ha2.B
+SUM <= half_adder:ha2.SUM
+CARRY <= CARRY.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|carry_ripple_adder|full_adder:\gen:8:FA|half_adder:ha1
+A => SUM.IN0
+A => CARRY.IN0
+B => SUM.IN1
+B => CARRY.IN1
+SUM <= SUM.DB_MAX_OUTPUT_PORT_TYPE
+CARRY <= CARRY.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|carry_ripple_adder|full_adder:\gen:8:FA|half_adder:ha2
+A => SUM.IN0
+A => CARRY.IN0
+B => SUM.IN1
+B => CARRY.IN1
+SUM <= SUM.DB_MAX_OUTPUT_PORT_TYPE
+CARRY <= CARRY.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|carry_ripple_adder|full_adder:\gen:9:FA
+A => half_adder:ha1.A
+B => half_adder:ha1.B
+CARRY_IN => half_adder:ha2.B
+SUM <= half_adder:ha2.SUM
+CARRY <= CARRY.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|carry_ripple_adder|full_adder:\gen:9:FA|half_adder:ha1
+A => SUM.IN0
+A => CARRY.IN0
+B => SUM.IN1
+B => CARRY.IN1
+SUM <= SUM.DB_MAX_OUTPUT_PORT_TYPE
+CARRY <= CARRY.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|carry_ripple_adder|full_adder:\gen:9:FA|half_adder:ha2
+A => SUM.IN0
+A => CARRY.IN0
+B => SUM.IN1
+B => CARRY.IN1
+SUM <= SUM.DB_MAX_OUTPUT_PORT_TYPE
+CARRY <= CARRY.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|carry_ripple_adder|full_adder:\gen:10:FA
+A => half_adder:ha1.A
+B => half_adder:ha1.B
+CARRY_IN => half_adder:ha2.B
+SUM <= half_adder:ha2.SUM
+CARRY <= CARRY.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|carry_ripple_adder|full_adder:\gen:10:FA|half_adder:ha1
+A => SUM.IN0
+A => CARRY.IN0
+B => SUM.IN1
+B => CARRY.IN1
+SUM <= SUM.DB_MAX_OUTPUT_PORT_TYPE
+CARRY <= CARRY.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|carry_ripple_adder|full_adder:\gen:10:FA|half_adder:ha2
+A => SUM.IN0
+A => CARRY.IN0
+B => SUM.IN1
+B => CARRY.IN1
+SUM <= SUM.DB_MAX_OUTPUT_PORT_TYPE
+CARRY <= CARRY.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|carry_ripple_adder|full_adder:\gen:11:FA
+A => half_adder:ha1.A
+B => half_adder:ha1.B
+CARRY_IN => half_adder:ha2.B
+SUM <= half_adder:ha2.SUM
+CARRY <= CARRY.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|carry_ripple_adder|full_adder:\gen:11:FA|half_adder:ha1
+A => SUM.IN0
+A => CARRY.IN0
+B => SUM.IN1
+B => CARRY.IN1
+SUM <= SUM.DB_MAX_OUTPUT_PORT_TYPE
+CARRY <= CARRY.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|carry_ripple_adder|full_adder:\gen:11:FA|half_adder:ha2
+A => SUM.IN0
+A => CARRY.IN0
+B => SUM.IN1
+B => CARRY.IN1
+SUM <= SUM.DB_MAX_OUTPUT_PORT_TYPE
+CARRY <= CARRY.DB_MAX_OUTPUT_PORT_TYPE
+
+

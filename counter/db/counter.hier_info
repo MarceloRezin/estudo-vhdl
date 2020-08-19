@@ -1,0 +1,15 @@
+|counter
+clk => q_temp[0].CLK
+clk => q_temp[1].CLK
+clk => q_temp[2].CLK
+clk => q_temp[3].CLK
+rst => q_temp[0].ACLR
+rst => q_temp[1].ACLR
+rst => q_temp[2].ACLR
+rst => q_temp[3].ACLR
+q[0] <= q_temp[0].DB_MAX_OUTPUT_PORT_TYPE
+q[1] <= q_temp[1].DB_MAX_OUTPUT_PORT_TYPE
+q[2] <= q_temp[2].DB_MAX_OUTPUT_PORT_TYPE
+q[3] <= q_temp[3].DB_MAX_OUTPUT_PORT_TYPE
+
+

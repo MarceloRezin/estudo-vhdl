@@ -1,0 +1,24 @@
+# Loading project bcd_checker
+# reading /home/marcelo-note/intelFPGA/18.1/modelsim_ase/linuxaloem/../modelsim.ini
+# Loading project aula22
+# Compile of signed_comparator.vhd was successful.
+# Compile of signed_comparator_tb.vhd was successful.
+# 2 compiles, 0 failed with no errors.
+vsim work.signed_comparator_tb
+# vsim work.signed_comparator_tb 
+# Start time: 20:03:45 on Dec 17,2019
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.signed_comparator_tb(sim)
+# Loading work.signed_comparator(rtl)
+rum 30 us
+# invalid command name "rum"
+run 30 us
+restart -f
+add wave -position insertpoint  \
+sim:/signed_comparator_tb/a \
+sim:/signed_comparator_tb/b \
+sim:/signed_comparator_tb/a_gt_b
+run 30 us

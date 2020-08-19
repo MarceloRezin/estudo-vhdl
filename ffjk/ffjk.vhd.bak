@@ -1,0 +1,22 @@
+-- Exemplo de um FlipFlop JK
+-- Autor: Marcelo Rezin
+-- Data: 28/10/2019
+
+-- Libs
+
+
+-- Entidade
+entity ffjk is
+    port(
+        j, k, clk    :   in  bit;
+        q, q_bar     :   buffer bit
+    );
+end ffjk;
+
+--Arquitetura
+architecture main of and_gate is
+begin
+
+    z <= a and b;
+
+end main;

@@ -1,0 +1,13 @@
+/home/marcelo-note/projetos/vhdl/hello-tb/hello_tb.vhd {1 {vcom -work work -2002 -explicit -stats=none /home/marcelo-note/projetos/vhdl/hello-tb/hello_tb.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Compiling entity hello_tb
+-- Compiling architecture sim of hello_tb
+
+} {} {}} /home/marcelo-note/projetos/vhdl/hello-tb/clk_rst_tb.vhd {1 {vcom -work work -2002 -explicit -stats=none /home/marcelo-note/projetos/vhdl/hello-tb/clk_rst_tb.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Compiling entity clk_rst_tb
+-- Compiling architecture sim of clk_rst_tb
+
+} {} {}}

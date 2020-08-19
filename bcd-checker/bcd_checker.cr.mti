@@ -1,0 +1,20 @@
+/home/marcelo-note/projetos/vhdl/bcd-checker/bcd_checker.vhd {1 {vcom -work work -2002 -explicit -stats=none /home/marcelo-note/projetos/vhdl/bcd-checker/bcd_checker.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity bcd_checker
+-- Compiling architecture dataflow of bcd_checker
+
+} {} {}} /home/marcelo-note/projetos/vhdl/bcd-checker/bcd_checker_tb.vhd {1 {vcom -work work -2002 -explicit -stats=none /home/marcelo-note/projetos/vhdl/bcd-checker/bcd_checker_tb.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity bcd_checker_tb
+-- Compiling architecture sim of bcd_checker_tb
+-- Loading entity bcd_checker
+
+} {} {}}

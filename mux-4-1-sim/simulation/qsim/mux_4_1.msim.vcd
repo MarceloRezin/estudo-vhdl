@@ -1,0 +1,88 @@
+$comment
+	File created using the following command:
+		vcd file mux_4_1.msim.vcd -direction
+$end
+$date
+	Tue Oct 29 12:49:40 2019
+$end
+$version
+	ModelSim Version 10.5b
+$end
+$timescale
+	1ps
+$end
+
+$scope module mux_4_1_vhd_vec_tst $end
+$var wire 1 ! D0 $end
+$var wire 1 " D1 $end
+$var wire 1 # D2 $end
+$var wire 1 $ D3 $end
+$var wire 1 % S0 $end
+$var wire 1 & S1 $end
+$var wire 1 ' Y $end
+
+$scope module i1 $end
+$var wire 1 ( gnd $end
+$var wire 1 ) vcc $end
+$var wire 1 * unknown $end
+$var wire 1 + devoe $end
+$var wire 1 , devclrn $end
+$var wire 1 - devpor $end
+$var wire 1 . ww_devoe $end
+$var wire 1 / ww_devclrn $end
+$var wire 1 0 ww_devpor $end
+$var wire 1 1 ww_D0 $end
+$var wire 1 2 ww_D1 $end
+$var wire 1 3 ww_D2 $end
+$var wire 1 4 ww_D3 $end
+$var wire 1 5 ww_S0 $end
+$var wire 1 6 ww_S1 $end
+$var wire 1 7 ww_Y $end
+$var wire 1 8 \Y~output_o\ $end
+$var wire 1 9 \D2~input_o\ $end
+$var wire 1 : \S1~input_o\ $end
+$var wire 1 ; \D1~input_o\ $end
+$var wire 1 < \S0~input_o\ $end
+$var wire 1 = \D0~input_o\ $end
+$var wire 1 > \Y~0_combout\ $end
+$var wire 1 ? \D3~input_o\ $end
+$var wire 1 @ \Y~1_combout\ $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0!
+0"
+0#
+1$
+1%
+1&
+1'
+0(
+1)
+x*
+1+
+1,
+1-
+1.
+1/
+10
+01
+02
+03
+14
+15
+16
+17
+18
+09
+1:
+0;
+1<
+0=
+1>
+1?
+1@
+$end
+#1000000
